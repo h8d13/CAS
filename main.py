@@ -46,12 +46,12 @@ class Env:
 	def rel_envir():
 		return os.reload_environ()
 
-Env.put_value("DUMMYKV", "0") # (1) False
-print(Env.has_value("DUMMYKV")) # (2) True
-print(Env.get_value("DUMMYKV")) # (3) returns 0, None
-print(Env.get_bool("DUMMYKV")) # (4) False 0, flip (1) to any _TRUTHY and would show True
-Env.del_value("DUMMYKV") # (5) Reset
-print(Env.get_value("DUMMYKV", "1")) # (6) returns 1, because we set a default.
-Env.put_value("DUMMYKV", "1") # (7) True
-#Env.rel_envir()
-print(Env.get_bool("DUMMYKV"))
+# Env.put_value("DUMMYKV", "0") # (1) False
+# print(Env.has_value("DUMMYKV")) # (2) True
+# print(Env.get_value("DUMMYKV")) # (3) returns 0, None
+# print(Env.get_bool("DUMMYKV")) # (4) False 0, flip (1) to any _TRUTHY and would show True
+# Env.del_value("DUMMYKV") # (5) Reset
+# print(Env.get_value("DUMMYKV", "1")) # (6) returns 1, because we set a default.
+# Env.put_value("DUMMYKV", "1") # (7) True
+# Env.rel_envir()
+# print(Env.get_bool("DUMMYKV"))
