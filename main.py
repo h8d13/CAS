@@ -1,8 +1,11 @@
 #!/usr/bin/env python
 import os
 
+# consts
 _TRUTHY_VALS=["y", "yes", "1", "true", "t", "on"]
+# anything else will be considered false...
 
+# helpers
 def _normalize(value: str) -> str:
 	return value.strip().lower()
 
